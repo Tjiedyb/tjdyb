@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="homeSecondTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T3O-Sg-Ynw">
+                        <rect key="frame" x="10" y="7" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="HM3-MA-4wS"/>
+                            <constraint firstAttribute="height" constant="70" id="Q09-pX-XcV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网贷机构备案后需重新领证  既不是ICP也不是EDI证 中国互联网金融协会（互金协会）在北京举行互联网 金融发展政策解读闭门会" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r32-g6-T5G">
+                        <rect key="frame" x="88" y="8" width="224" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="9ET-Lo-3UD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017年05月10日17:24:53" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsS-aT-ZbO">
+                        <rect key="frame" x="88" y="56" width="224" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="092-lu-2Wz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="r32-g6-T5G" secondAttribute="trailing" constant="8" id="2Vy-ed-C9L"/>
+                    <constraint firstItem="r32-g6-T5G" firstAttribute="leading" secondItem="T3O-Sg-Ynw" secondAttribute="trailing" constant="8" id="Ctb-cK-oSa"/>
+                    <constraint firstItem="T3O-Sg-Ynw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FLi-V9-jdR"/>
+                    <constraint firstAttribute="trailing" secondItem="bsS-aT-ZbO" secondAttribute="trailing" constant="8" id="JbX-NX-Nda"/>
+                    <constraint firstItem="T3O-Sg-Ynw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="S3j-H9-FVa"/>
+                    <constraint firstItem="bsS-aT-ZbO" firstAttribute="leading" secondItem="T3O-Sg-Ynw" secondAttribute="trailing" constant="8" id="b7G-sR-YNz"/>
+                    <constraint firstItem="r32-g6-T5G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ftv-c4-HQ2"/>
+                    <constraint firstItem="bsS-aT-ZbO" firstAttribute="top" secondItem="r32-g6-T5G" secondAttribute="bottom" id="m6Z-Yi-49y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="picView" destination="T3O-Sg-Ynw" id="l0y-FT-vOb"/>
+                <outlet property="timeLabel" destination="bsS-aT-ZbO" id="CiO-Ix-YV0"/>
+                <outlet property="titleLabel" destination="r32-g6-T5G" id="MAX-Pq-TuE"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="103.5"/>
+        </tableViewCell>
+    </objects>
+</document>

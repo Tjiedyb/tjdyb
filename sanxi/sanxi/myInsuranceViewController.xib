@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="myInsuranceViewController">
+            <connections>
+                <outlet property="applyBtn" destination="9kJ-pl-SHL" id="LIh-Qc-bC7"/>
+                <outlet property="loginBtn" destination="pHh-NS-zjm" id="G9w-kb-nZM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IT3-br-PMJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userDefault" translatesAutoresizingMaskIntoConstraints="NO" id="NHL-H4-gNY">
+                            <rect key="frame" x="20" y="35" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="E7i-eA-O3u"/>
+                                <constraint firstAttribute="width" constant="50" id="KTN-4t-Dqa"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根据基金业协会发布的《私募投资基金信息披露管理办法》及《私募基金募集行为管理办法》，产品募集推荐信息及产品信息均只能面向特定对对象展视！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJx-K1-hJ7">
+                            <rect key="frame" x="78" y="35.5" width="289" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Xrd-Ey-lql"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RJx-K1-hJ7" secondAttribute="trailing" constant="8" id="D54-z2-dlP"/>
+                        <constraint firstItem="NHL-H4-gNY" firstAttribute="leading" secondItem="IT3-br-PMJ" secondAttribute="leading" constant="20" id="LED-aL-wgS"/>
+                        <constraint firstItem="RJx-K1-hJ7" firstAttribute="leading" secondItem="NHL-H4-gNY" secondAttribute="trailing" constant="8" id="Ohq-cQ-7hw"/>
+                        <constraint firstItem="NHL-H4-gNY" firstAttribute="centerY" secondItem="IT3-br-PMJ" secondAttribute="centerY" id="QZM-u5-o22"/>
+                        <constraint firstAttribute="height" constant="120" id="tZu-ef-Hp0"/>
+                        <constraint firstItem="RJx-K1-hJ7" firstAttribute="centerY" secondItem="IT3-br-PMJ" secondAttribute="centerY" id="wZf-N5-RjG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHh-NS-zjm">
+                    <rect key="frame" x="20" y="140" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CrI-sk-IMw"/>
+                    </constraints>
+                    <state key="normal" title="基金会员登录">
+                        <color key="titleColor" red="0.89803921568627454" green="0.21568627450980393" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kJ-pl-SHL">
+                    <rect key="frame" x="20" y="200" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yZP-zI-kMP"/>
+                    </constraints>
+                    <state key="normal" title="提交注册基金会员申请">
+                        <color key="titleColor" red="0.8980392157" green="0.2156862745" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUB-am-TGi">
+                    <rect key="frame" x="20" y="260" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.2156862745" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Wy0-oc-KTn"/>
+                    </constraints>
+                    <state key="normal" title="预约">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="IT3-br-PMJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KkA-Zl-dZT"/>
+                <constraint firstAttribute="trailing" secondItem="eUB-am-TGi" secondAttribute="trailing" constant="20" id="LnG-sw-aKr"/>
+                <constraint firstAttribute="trailing" secondItem="9kJ-pl-SHL" secondAttribute="trailing" constant="20" id="Mc3-1H-zf2"/>
+                <constraint firstAttribute="trailing" secondItem="pHh-NS-zjm" secondAttribute="trailing" constant="20" id="Mfy-fb-BLz"/>
+                <constraint firstItem="IT3-br-PMJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pl9-tZ-qYz"/>
+                <constraint firstItem="9kJ-pl-SHL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="bFd-9Q-ohc"/>
+                <constraint firstItem="9kJ-pl-SHL" firstAttribute="top" secondItem="pHh-NS-zjm" secondAttribute="bottom" constant="20" id="cko-sW-KJS"/>
+                <constraint firstItem="eUB-am-TGi" firstAttribute="top" secondItem="9kJ-pl-SHL" secondAttribute="bottom" constant="20" id="ehu-VL-dna"/>
+                <constraint firstAttribute="trailing" secondItem="IT3-br-PMJ" secondAttribute="trailing" id="gpR-0T-8li"/>
+                <constraint firstItem="pHh-NS-zjm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="luR-Ne-ruy"/>
+                <constraint firstItem="pHh-NS-zjm" firstAttribute="top" secondItem="IT3-br-PMJ" secondAttribute="bottom" constant="20" id="nS9-70-eRZ"/>
+                <constraint firstItem="eUB-am-TGi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="wfl-Ue-KXH"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="100.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="userDefault" width="16" height="16"/>
+    </resources>
+</document>
